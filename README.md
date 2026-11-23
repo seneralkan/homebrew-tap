@@ -17,11 +17,14 @@ Update with `brew upgrade --cask agentawake`.
 `brew uninstall --cask agentawake` removes the Claude Code hooks and the sudoers rule, and restores
 normal sleep. Add `--zap` to also delete settings.
 
-## Maintainers: releasing a new version
+## Maintainers
 
-After a new `vX.Y.Z` release of agent-awake is published:
+Releases are automatic: running `./scripts/ship.sh X.Y.Z` in agent-awake tags the release, and its workflow
+updates `Casks/agentawake.rb` here through a write deploy key.
+
+To bump by hand (e.g. if the workflow step failed):
 
 ```bash
-./bump.sh X.Y.Z    # downloads the release zip, updates version + sha256 in Casks/agentawake.rb
+./bump.sh X.Y.Z    # downloads the release zip, updates version + sha256
 git commit -am "agentawake X.Y.Z" && git push
 ```
