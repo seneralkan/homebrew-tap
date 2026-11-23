@@ -1,6 +1,6 @@
 cask "agentawake" do
-  version "1.0.0"
-  sha256 "3d903c8bc1c42aa9439b5cdbc001770a1744ad36b34fbaba04ba5185a4dc19f3"
+  version "1.0.1"
+  sha256 "15844ec7d80e6aa3039306417c04b164f9be902380d4d63febb5c6f6b584ef35"
 
   url "https://github.com/seneralkan/agent-awake/releases/download/v#{version}/AgentAwake-#{version}.zip"
   name "AgentAwake"
